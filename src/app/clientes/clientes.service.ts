@@ -10,7 +10,7 @@ export class ClientesService {
 
   constructor(private httpClient: HttpClient) { }
 
-  private clientUrl = 'http://localhost:3000/clientes/'
+  private clientUrl = 'https://json-server-ma9.herokuapp.com/clientes/'
 
   getAllClients(): Observable<Cliente>{
     return this.httpClient.get<Cliente>(this.clientUrl)
