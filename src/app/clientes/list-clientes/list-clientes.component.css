@@ -1,0 +1,87 @@
+.body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+.list-card{
+    display: flex;
+    flex-direction: column;
+    min-width: 80%;
+    min-height: 80%;
+    background-color: #e8e8e8;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+}
+.list-cliente{
+    width: 100px;
+    height: 100px;
+}
+
+tr:nth-child(odd) {
+	background-color:#ffffff;
+    color: black;
+}
+tr:nth-child(even) {
+	background-color:#8DCF69;
+    color: #e8e8e8;
+}
+th, td {
+  border: 1px solid #8a8a8a;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+th{
+    background-color: #ffffff;
+}
+td{
+    padding: 8px;
+}
+.btns{
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+}
+
+.btn{
+    display: flex;
+    height: 40%;
+    margin: 5px;
+    color: #e8e8e8;
+    border: none;
+    border-radius: 3px;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.table-container{
+    display: flex;
+    min-width: 100%;
+}
+.table-header{
+    display: flex;
+    justify-content: flex-end;
+    min-width: 100%;
+
+}
+table{
+    width: 100%;
+    margin: 8px;
+}
+.edit{
+    background-color: #00a560;
+}
+
+.del{
+    background-color: rgb(158, 22, 49);
+}
+
+.new{
+    height: 60px;
+    margin: 8px;
+    background-color: rgb(1, 63, 196);
+}

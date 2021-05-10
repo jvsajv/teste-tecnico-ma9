@@ -1,0 +1,33 @@
+.navbar{
+    height: 10vh;
+    min-height: fit-content;
+    width: 100vw;
+    background-color: #8DCF69;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
+
+}
+.home{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.body{
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.header-logo{
+    display: flex;
+    align-self: center;
+    margin: 18px;
+}
+.title{
+    display: flex;
+    color: #FFFFFF;
+    justify-content: center;
+    width: 84%;
+}
+.text{
+    margin-left: -206px;
+}

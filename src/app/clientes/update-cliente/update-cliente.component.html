@@ -1,0 +1,38 @@
+<div class="body">
+    <div class="list-card">
+        <div class="container">
+            <form (submit)="updateClient(newClientForm)" #newClientForm="ngForm" class="form-container">
+                <div class="mb-3">
+                  <label for="nome" class="form-label" >Nome</label>
+                  <input type="text" class="form-control" required name="nome" [(ngModel)]="cliente.nome" id="inputNome" ngModel>
+                </div>
+                <div class="mb-3">
+                    <label for="sexo" class="form-label">Sexo</label>
+                    <select name="sexo" id="sexo" name="sexo" [(ngModel)]="cliente.sexo" class="form-control" ngModel>
+                        <option value="F" class="form-control">Feminino</option>
+                        <option value="M" class="form-control">Masculino</option>
+                        <option value="O" class="form-control">Outro</option>
+                        <option value="X" class="form-control">Prefiro não dizer</option>
+                      </select>
+                  </div>
+                <div class="mb-3">
+                    <label for="cpf" class="form-label">CPF</label>
+                    <input type="text" name="cpf" class="form-control" [(ngModel)]="cliente.cpf" id="inputCpf" ngModel>
+                  </div>
+                  <div class="mb-3">
+                    <label for="cpf" name="dat_nasc" class="form-label">Data de Nascimento</label>
+                    <input type="datetime-local" class="form-control" name="dat_nasc" [(ngModel)]="cliente.dat_nasc" id="inputData" ngModel>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label" >Email</label>
+                    <input type="email" class="form-control" name="email" [(ngModel)]="cliente.email" id="inputEmail" ngModel>
+                  </div>
+                  <div class="mb-3">
+                    <label for="telefone"class="form-label" >Telefone</label>
+                    <input type="text"  name="phone"  class="form-control" [(ngModel)]="cliente.phone" id="inputTelefone" ngModel>
+                  </div>
+                <button type="submit" class="btn btn-primary">Salvar Edição</button>
+              </form>
+        </div>
+    </div>
+</div>

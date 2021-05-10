@@ -1,0 +1,46 @@
+<div class="body">
+    <div class="list-card">
+        <div class="table-header">
+            <button (click)="newClient()" class="btn new">Novo Cliente</button>
+        </div>
+        <div class="table-container">
+            <table class="table">
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Sexo</th>
+                    <th>CPF</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Data de Nascimento</th>
+                </tr>
+                <tr *ngFor="let cliente of clienteList" class="list-cliente">
+                    <td>{{cliente.id}}</td>
+                    <td>{{cliente.nome}}</td>
+                    <td>{{cliente.sexo === "M" ? ("Masculino")
+                        : cliente.sexo === "F" ? ("Feminino")
+                        : cliente.sexo === "O" ? ("Outro")
+                        : ("Indefinido")
+                        }}</td>
+                    <td>{{cliente.cpf}}</td>
+                    <td>{{cliente.phone}}</td>
+                    <td>{{cliente.email}}</td>
+                    <td>{{cliente.dat_nasc}}</td>
+                    <div class="btns">
+                        <button (click)="editClient(cliente.id)" class="btn edit">Editar</button>
+                        <button (click)="deleteClient(cliente.id)" class="btn del">Deletar</button>
+                    </div>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+    $(document).on("click", ".btn edit", function () {
+    var nomePessoa = $(this).closest('tr').find('td[nome]').attr('id');
+    alert(nomePessoa);
+});
+});
+</script>
